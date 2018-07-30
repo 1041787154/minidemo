@@ -1,0 +1,25 @@
+﻿[
+	{ "id": "1", iconCls: "fa fa-desktop", text: "代办已办",  children: [
+                { "id": "sjklj1", iconCls: "fa fa-plug", text: "待办事项", url: "pages/diypager.html" },
+                { "id": "sjbgl1", iconCls: "fa fa-table", text: "已办事项", url: "pages/diypager1.html" }
+            ]
+    },
+	
+    { "id": "xtgl", iconCls: "fa fa-desktop", text: "测井监督", children: [       
+        { "id": "excel", iconCls: "fa fa-file-excel-o", text: "新建", children: [
+                  { "id": "drpz", iconCls: "fa fa-sign-out", text: "井筒信息", url: "pages/formlayout.html" },
+                  { "id": "dcpz", iconCls: "fa fa-sign-out", text: "测前检查", url: "pages/1.html" },
+                   { "id": "drpz1", iconCls: "fa fa-sign-out", text: "测井质量评估", url: "pages/1.html" },
+                  { "id": "dcpz1", iconCls: "fa fa-sign-out", text: "生成监督报告", url: "pages/1.html" }
+            ]
+        },   
+        { "id": "sjgl", iconCls: "fa fa-database", text: "查找", url: "pages/detailgrid.html"}
+        ]
+    },
+ 
+    { "id": "gsgl", iconCls: "fa fa-sitemap", text: "查询检索", children: [
+                { "id": "sjklj", iconCls: "fa fa-plug", text: "按构造查找", url: "pages/1.html" },
+                { "id": "sjbgl", iconCls: "fa fa-table", text: "按工区查找", url: "pages/1.html" }
+            ]
+    }
+]

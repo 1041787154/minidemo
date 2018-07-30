@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>FormLayout 表单布局</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <link href="../demo.css" rel="stylesheet" type="text/css" />
+
+    <script src="../../../scripts/boot.js" type="text/javascript"></script>
+    
+    
+    <style type="text/css">
+        
+       
+    </style>
+
+</head>
+<body>
+    <h1>井筒信息如下：</h1>   
+    <div class="mini-toolbar" style="padding:0px;border-bottom:0;">
+        <table style="width:100%;">
+            <tr>
+                <td style="width:100%;">                
+                   <!--  <a class="mini-button" iconCls="icon-addfolder" plain="true">增加</a> -->
+                  <!--   <a class="mini-button" iconCls="icon-edit" plain="true">修改</a> -->
+                    <a class="mini-button" iconCls="icon-save" plain="true">保存</a>
+                    <span class="separator"></span>
+                    <a class="mini-button" iconCls="icon-upload" plain="true">提交</a>
+                     <span class="separator"></span>
+                    <a class="mini-button" iconCls="icon-reload" plain="true">刷新</a>
+                </td>
+               <!--  <td style="white-space:nowrap;">                    
+                    <div id="pager1" class="mini-pager" style="width:450px;" borderStyle="border:0"
+                        sizeList="[5,10,20,100]">        
+                    </div> 
+                </td>   -->
+            </tr>
+        </table>
+    </div>   
+    
+   <!--  <h4>多列多行</h4> -->
+<table border="0" cellpadding="1" cellspacing="2" style="width:100%;table-layout:fixed;">
+    <tr>
+        <td style="width:80px">井孔名称 </td>
+        <td style="width:50%">
+            <input name="name" class="mini-textbox"  required="true"/>
+        </td>
+        <td style="width:80px">所属油田 </td>
+        <td style="width:50%">
+            <input name="addr" class="mini-textbox"  required="true"/>
+        </td>
+    </tr>
+    <tr>
+        <td >井  &nbsp;&nbsp;&nbsp;别</td>
+        <td >
+            <input name="gender" class="mini-combobox" url="../data/countrys.txt" value="油井1" textField="text" valueField="id"  required="true"/>
+        </td>
+        <td >所属工区</td>
+        <td >
+            <input name="age" class="mini-combobox" url="../data/gongqu.txt" value="油井1" textField="text" valueField="id"  required="true" />
+        </td>
+    </tr>
+     <tr>
+        <td >测井队伍</td>
+        <td >
+            <input name="gender" class="mini-treeselect" url="../data/duiwu.txt" multiSelect="false"  textField="text" valueField="id" parentField="pid" checkRecursive="true" value="ajax,button"  required="true"/>
+        </td>
+        <td >测井日期</td>
+        <td >
+            <input name="date1" class="mini-datepicker" value="2010-10-12" required="true"/>
+        </td>
+    </tr>
+     <tr>
+        <td >井队负责</td>
+        <td >
+            <input name="gender" class="mini-textbox" required="true"/>
+        </td>
+        <td >操   作   员</td>
+        <td >
+            <input name="age" class="mini-textbox"  required="true" />
+        </td>
+    </tr>
+    <tr>
+        <td style="width:80px">地面测井</td>
+        <td style="width:50%">
+            <input name="name" class="mini-textbox"  required="true" style="width:70%"/>
+        </td>
+    </tr>
+    <tr>
+        <td style="width:80px">测井项目</td>
+        <td style="width:50%">
+            <input name="pwd" class="mini-textbox"  required="true" style="width:70%"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+        </td>
+        <td>
+            <div name="countrys" class="mini-checkboxlist" repeatItems="3" repeatLayout="flow" url="../data/xiangmu.txt" value="自然伽马" textField="text" valueField="id"  required="true"></div>
+        </td>
+     </tr>
+</table>
+    
+<table border="0" cellpadding="1" cellspacing="2" style="width:100%; table-layout:fixed;">
+    <tr>
+        <td style="width:80px">钻井井深 </td>
+        <td style="width:50%">
+            <input name="name" class="mini-textbox" required="true"/>
+        </td>
+        <td style="width:80px">测井井深 </td>
+        <td style="width:50%">
+            <input name="addr" class="mini-textbox"  required="true"/>
+        </td>
+    </tr>
+    <tr>
+        <td >测井井段</td>
+        <td >
+            <input name="gender" class="mini-textbox" required="true"/>
+        </td>
+        <td >井底温度</td>
+        <td >
+            <input name="age" class="mini-textbox" required="true"/>
+        </td>
+    </tr>
+     <tr>
+        <td >仪器系列</td>
+        <td >
+            <input name="gender" class="mini-treeselect" url="../data/yiqi.txt" multiSelect="false"  textField="text" valueField="id" parentField="pid" checkRecursive="true" value="ajax,button" required="true"/>
+        </td>
+        <td >测井项目</td>
+        <td >
+            <input name="age" class="mini-textbox" required="true" />
+        </td>
+    </tr>
+     <tr>
+        <td >监督员</td>
+        <td >
+            <input name="gender" class="mini-textbox" required="true"/>
+        </td>
+    </tr>
+</table>
+  
+    
+
+    
+    <script type="text/javascript">
+        mini.parse();
+        
+
+    </script>
+
+    <div class="description">
+        <h3>Description</h3>
+        <p>表单布局使用HTML的table标签元素，可以实现任意多列多行的布局效果。</p>
+    </div>
+</body>
+</html>

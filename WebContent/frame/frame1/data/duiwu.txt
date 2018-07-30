@@ -1,0 +1,21 @@
+﻿[
+	{id: "base", text: "大庆"},
+	
+	{id: "ajax", text: "一队", pid: "base"},
+	{id: "json", text: "二队", pid: "base"},
+	{id: "date", text: "三队", pid: "base", checked: true},
+	{id: "control", text: "四队", pid: "base"},
+
+	{id: "forms", text: "总队", pid: "base"},
+	
+	{id: "button", text: "支部一队", pid: "forms"},
+	{id: "listbox", text: "支部二队", pid: "forms"},
+	{id: "checkboxlist", text: "支部三队", pid: "forms"},
+	
+	{id: "lists", text: "华中"},
+	
+	{id: "datagrid", text: "一队", pid: "lists"},			
+	{id: "tree", text: "Tree", 二队: "lists"},
+	{id: "treegrid", text: "三队 ", pid: "lists"},
+
+]

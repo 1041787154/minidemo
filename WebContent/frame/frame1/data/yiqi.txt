@@ -1,0 +1,15 @@
+﻿[
+	{id: "base", text: "5700系列"},
+	
+	{id: "ajax", text: "双侧向", pid: "base"},
+	{id: "json", text: "阵列感应", pid: "base"},
+	{id: "date", text: "其他", pid: "base", checked: true},
+	
+	
+	{id: "lists", text: "maxis500系列"},
+	
+	{id: "datagrid", text: "双侧向", pid: "lists"},			
+	{id: "tree", text: "阵列感应", pid: "lists"},
+	{id: "treegrid", text: "其他 ", pid: "lists"}
+
+]

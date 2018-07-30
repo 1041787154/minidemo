@@ -1,0 +1,10 @@
+﻿[
+	{"name":"构造一", "id":"xz", expanded: true},
+	{"name":"构造二", "id":"小明", "pid": "xz"},
+	{"name":"构造三","id":"小明", "pid": "xz"},
+
+	{"name":"工区一", "id":"yw", expanded: true},
+	{"name":"工区二", "id":"冯飞", "pid": "yw"},	
+	{"name":"工区三", "id":"冯飞", "pid": "yw"}
+	
+]
